@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form autocomplete='off' class='form' action="#" method="post">
+  <div class='control'>
+    <h1>
+      Sign In
+    </h1>
+  </div>
+  <div class='control block-cube block-input'>
+    <input name='username' placeholder='Username' type='text'>
+    <div class='bg-top'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg-right'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg'>
+      <div class='bg-inner'></div>
+    </div>
+  </div>
+  <div class='control block-cube block-input'>
+    <input name='password' placeholder='Password' type='password'>
+    <div class='bg-top'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg-right'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg'>
+      <div class='bg-inner'></div>
+    </div>
+  </div>
+  <button class='btn block-cube block-cube-hover' type="submit" value="submit" >
+    <div class='bg-top'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg-right'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='text'>
+      Log In
+    </div>
+  </button>
+  <div class='credits'>
+    <a href='#'>
+      ©Copyright by ikniz NguyenMyThong
+    </a>
+  </div>
+</form>
+<div class="signup">
+<a href="{{url_for('signup')}}">Haven't got an account?</a>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

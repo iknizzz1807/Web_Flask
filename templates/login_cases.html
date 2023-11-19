@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<case>{{ case }}</case>
+<title>{{ login_status }}</title>
+{% endblock %}
+{% block heading %}
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	{% if goto == "GoBack" %}
+		<meta http-equiv="refresh" content="1;{{url_for('login')}}" />
+	{% endif %}
+	{% if goto == "GoBackSignUp" %}
+		<meta http-equiv="refresh" content="1;{{url_for('signup')}}" />
+	{% endif %}
+{% endblock %}

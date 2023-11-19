@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block heading %}
+<title>Hello there!</title>
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+{% endblock %}
+
+{% block content %}
+	<welcome class="typingEffect6">Welcome to my website, {{ nameofuser }}!</welcome>
+	<a class="direct" href="{{url_for('login')}}">Log out</a>
+{% endblock %}
