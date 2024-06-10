@@ -1,2 +1,2 @@
-# Web_Flask
- My simple login form website using Flask
+# Web Flask
+ My simple login form website using Flask (no database)
